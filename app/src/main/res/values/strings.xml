@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BookCam</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">確定</string>
+
+    <string name="msg_InsertSuccess">註冊成功</string>
+    <string name="msg_InsertFail">註冊失敗</string>
+    <string name="msg_LoginSuccess">登入成功</string>
+    <string name="msg_LoginFail">登入失敗</string>
+    <string name="msg_NeedToInsert">此帳號未註冊</string>
+    <string name="msg_NameIsInvalid">帳號不可為空</string>
+    <string name="msg_NamesIsInvalid">帳號必須為信箱</string>
+    <string name="msg_PasswordIsInvalid">密碼過短</string>
+    <string name="msg_PasswordsIsInvalid">密碼過長</string>
+    <string name="msg_GenderIsInvalid">性別不可為空</string>
+    <string name="msg_GendersIsInvalid">性別需為男或女</string>
+    <string name="msg_GradeIsInvalid">系別不可為空</string>
+    <string name="msg_GradesIsInvalid">系別超過限制</string>
+    <string name="msg_NoImage">No image</string>
+    <string name="msg_NoDataFound">No data found</string>
+    <string name="msg_RowDeleted">row deleted</string>
+    <string name="msg_RowUpdated">row updated</string>
+    <string name="msg_NoCameraAppsFound">no camera apps found</string>
+    <string name="text_NotGranted">not granted</string>
+
+</resources>

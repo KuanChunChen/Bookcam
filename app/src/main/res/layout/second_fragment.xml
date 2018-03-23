@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background ="#0a6f71">
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:paddingTop="13dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ExpandableListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mExpandableListView"
+        />
+<!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#ffffff"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="38dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/f2_on"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="推薦一書"
+            android:id="@+id/textView5"
+            android:layout_marginTop="7dp"
+            android:textColor="#a3a1a1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvNews"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" />
+-->
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a6f71">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:id="@+id/imageView"
+                android:background="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:text="註冊"
+                android:textSize="25sp"
+                android:id="@+id/textView2"
+                android:layout_marginLeft="6dp" />
+
+            <EditText
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:hint="暱稱"
+                android:inputType="textWebEmailAddress|text"
+                android:textColor="#0a6f71"
+                android:background="@drawable/edit"
+                android:textColorHint="#8e8e8e"
+                android:id="@+id/etNick" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:hint="帳號/信箱"
+                android:inputType="textWebEmailAddress|text"
+                android:textColor="#0a6f71"
+                android:background="@drawable/edit"
+                android:textColorHint="#8e8e8e"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:hint="請輸入密碼"
+                android:inputType="textPassword"
+                android:textColor="#0a6f71"
+                android:longClickable="false"
+                android:background="@drawable/edit"
+                android:textColorHint="#8e8e8e"
+                android:textIsSelectable="false" />
+
+
+            <Button
+                android:id="@+id/btFinishInsert"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="註冊"
+                android:layout_marginTop="15dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/button_create"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:onClick="onBack"
+                android:text="返回登入"
+                android:id="@+id/backLogin"
+                android:layout_marginTop="30dp"
+                android:singleLine="false"
+                android:textColor="#f1f1f1" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClear"
+                android:text="清除欄位"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#ffffff"
+                android:textColor="#23b194"
+                android:shadowColor="#888888"
+                android:singleLine="true"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCancelClick"
+                android:text="取消"
+                android:layout_gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:shadowColor="#888888"
+                android:singleLine="false"
+                android:textColor="#23b194"
+                android:background="#ffffff"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a6f71">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:background="#0a6f71"
+        android:baselineAligned="true"
+        android:layout_marginTop="90dp">
+
+
+        <EditText
+            android:id="@+id/etBookcaseName"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:hint="書櫃名稱"
+            android:inputType="text"
+            android:textColor="#0a6f71"
+            android:background="@drawable/edit"
+            android:textColorHint="#8e8e8e"
+            />
+
+        <EditText
+            android:id="@+id/etBookSize"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:hint="請輸入書櫃層數"
+            android:textColor="#0a6f71"
+            android:longClickable="false"
+            android:background="@drawable/edit"
+            android:textColorHint="#8e8e8e"
+            android:textIsSelectable="false"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etBookcaseName"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:hint="請輸入書櫃實際位置"
+            android:inputType="text"
+            android:textColor="#0a6f71"
+            android:background="@drawable/edit"
+            android:textColorHint="#8e8e8e"
+            />
+
+
+        <Button
+            android:id="@+id/btInsertBook"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="建立書櫃"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:background="@drawable/button_login"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="5dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

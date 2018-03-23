@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background ="#0a6f71">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="設定"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:id="@+id/listView2"
+        android:background="#ffffff"
+        android:layout_marginTop="15dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登出"
+        android:id="@+id/button2"
+        android:textAlignment="center"
+        android:background="#f3f3f3"
+       />
+
+</LinearLayout>

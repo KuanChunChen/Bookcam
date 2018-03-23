@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dip" >
+
+    <!--  ListView最左边的缩略图 -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:weightSum="1"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:textColor="@color/abc_search_url_text_normal"
+            android:typeface="sans"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 歌曲名-->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- 歌手名 -->
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_above="@+id/listImg" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/listImg"
+        android:src="@mipmap/location"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tvLocat"
+        android:layout_alignTop="@+id/listImg"
+        android:layout_toRightOf="@+id/tvAuthor"
+        android:layout_toLeftOf="@+id/listImg"
+        android:layout_toStartOf="@+id/listImg" />
+
+
+    <!-- 进入播放 -->
+
+</RelativeLayout>
+

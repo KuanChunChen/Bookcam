@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="right"
+        android:weightSum="1"
+        android:background="#ff22a776"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btClose"
+            android:layout_gravity="right"
+            android:background="@mipmap/close"
+            android:baselineAlignBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:padding="6dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:background="#ffffff"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+        android:id="@+id/linearLayout2"
+        android:layout_above="@+id/relativeLayout">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_marginLeft="0dp"
+
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_weight="0.24"
+                android:layout_gravity="center"
+                android:textColor="#010101" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.24"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="176dp"
+                android:weightSum="1"
+                android:layout_marginTop="5dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/Author"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者"
+                    android:layout_weight="0.24"
+                    android:layout_gravity="left"
+                    android:textColor="@color/abc_search_url_text_normal" />
+
+                <TextView
+                    android:id="@+id/Publisher"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Name"
+                    android:text="出版社"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_weight="0.25"
+                    android:textColor="@color/abc_search_url_text_normal" />
+
+                <TextView
+                    android:id="@+id/Isbn"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISBN"
+                    android:layout_toEndOf="@+id/Publisher"
+                    android:layout_gravity="left"
+                    android:textColor="@color/abc_search_url_text_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/linearLayout4"
+                android:layout_toRightOf="@+id/linearLayout4"
+                android:layout_toEndOf="@+id/linearLayout4"
+                android:weightSum="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                        android:id="@+id/tvAuthor"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_weight="0.26"
+                    android:textColor="#7a7979" />
+
+                <TextView
+                    android:id="@+id/tvPublisher"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.17"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#7a7979" />
+
+                <TextView
+                    android:id="@+id/tvISBN"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#7a7979"
+                    android:layout_weight="0.20" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:id="@+id/btLocation"
+            android:layout_weight="0.02"
+            android:layout_gravity="left"
+
+
+            android:background="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:singleLine="false"
+            android:shadowColor="#ffffff" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:focusable="false"
+            android:id="@+id/btLike"
+            android:scaleType="centerInside"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_toStartOf="@+id/btSell"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:focusable="false"
+            android:id="@+id/btSell"
+            android:scaleType="centerInside"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentEnd="true"
+            android:background="#ffffff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

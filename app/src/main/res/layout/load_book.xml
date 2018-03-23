@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:background="#0a6f71"
+
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <com.lhh.apst.advancedpagerslidingtabstrip.SpinnerLoader
+            android:id="@+id/one"
+            android:layout_centerHorizontal="true"
+            app:point_color="@color/accent_material_dark"
+            app:isdynamic="false"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更改賣書資料中..."
+            android:id="@+id/textView7"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+

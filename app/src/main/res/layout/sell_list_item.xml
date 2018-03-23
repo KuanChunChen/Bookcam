@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dip" >
+
+    <!--  ListView最左边的缩略图 -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:weightSum="1">
+
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@mipmap/unsell"
+            android:focusable="false"
+            android:id="@+id/btSelling"
+            android:scaleType="centerInside"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.81" />
+
+
+
+    </LinearLayout>
+
+    <!-- 歌曲名-->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- 歌手名 -->
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        />
+
+    <!-- 歌曲播放时间 -->
+
+    <!-- 进入播放 -->
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@mipmap/next"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/tvName"
+        android:layout_below="@+id/tvAuthor"
+        android:layout_alignBottom="@+id/thumbnail"
+        />
+
+</RelativeLayout>
+
